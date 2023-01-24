@@ -1,8 +1,8 @@
-# professional-porfolio
+# professional-portfolio
 
 ## Description
 
-Professional Porfolio.
+Professional Portfolio.
 
 This repo contains the HTML, CSS and the assets to create this website.
 
