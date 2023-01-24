@@ -1,9 +1,10 @@
+/* Universal Selector */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
+/* Element Selectors */
 body {
     background-color: rgb(255, 255, 255);
     font-family: 'Inter', sans-serif;
@@ -54,7 +55,12 @@ nav a:hover {
     transition: 0.3s ease-out;
 }
 
+footer {
+    background-color: black;
+    color: white;
+}
 
+/* Class Selectors */
 .hero-image {
     margin: 0;
     min-height: 75vh;
@@ -105,36 +111,36 @@ nav a:hover {
     padding: .5%;
 }
 
-
+/* Background images for each porfolio link */
 .card1 {
     grid-column-start: 1;
     grid-column-end: 3;
-    background-image: url(./images/horiseon.png);
+    background-image: url(/assets/images/horiseon.png);
     background-position: top left;
     background-size: cover;
 }
 
 .card2 {
-    background-image: url(./images/calc.png);
+    background-image: url(/assets/images/calc.png);
     background-size: cover;
     background-position: center;
 }
 
 .card3 {
-    background-image: url(./images/toggle.jpg);
+    background-image: url(/assets/images/toggle.jpg);
     background-size: cover;
     background-position: center;
 }
 
 .card4 {
-    background-image: url(./images/hamburger.png);
+    background-image: url(/assets/images/hamburger.png);
     background-size: cover;
     background-position: center;
 
 }
 
 .card5 {
-    background-image: url(./images/lucky-shrub.JPG);
+    background-image: url(/assets/images/lucky-shrub.JPG);
     background-size:cover;
     background-position: center;
 }
@@ -145,20 +151,51 @@ nav a:hover {
     border: 2px #F2C83B solid;
 }
 
-#about {
+.about {
     margin: 25px 0;
 }
 
+.contact ul {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    align-items: center;
+
+}
+
+.contact a:hover {
+    color: #F2C83B;
+    transition: 0.3s ease-out;
+}
+
+
+
+
+/*Typing effect in hero section  */
 .type {
     overflow: hidden;
     border-right: 2.5px solid #F2C83B;
     color: white;
-    white-space: nowrap;
-    width: 75%;
+    white-space: nowrap;    
     margin: 0 auto;
     animation:
-    typing 4s steps(35, end) forwards,
+    typing 3s steps(35, end) forwards,
     blink-caret 1s step-end infinite;
+}
+
+.type2 {
+    overflow: hidden;
+    border-right: 2.5px solid #F2C83B;
+    color: white;
+    white-space: nowrap;
+    width: 0%;
+    margin: 5% auto;
+    animation:
+    typing 3.5s steps(51, end) forwards,
+    blink-caret 1s step-end infinite;
+    animation-delay: 3s;
+    background-repeat: no-repeat;    
 }
 
 
@@ -175,15 +212,22 @@ nav a:hover {
     50% { border-color: #F2C83B }
     }
 
-footer {
-    background-color: black;
-    color: white;
+/* Media screen size for responsive design */
+
+@media screen and (max-width: 992px) {
+    .container1 {
+        flex-direction: column;
+    }
+    .container1 img {
+        order: -1;
+        margin-bottom: 20px;
+    }
 }
 
-#contact ul {
-    display: flex;
-    justify-content: center;
-    gap: 100px;
-    padding: 10px;;
-
+@media screen and (max-width: 768px) {
+    .container2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 }
