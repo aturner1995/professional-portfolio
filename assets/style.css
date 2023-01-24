@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+    font-family: 'Inter', sans-serif;
+}
+
+h2 {
+    text-align: center;
+}
+
+header {
+    background-color: rgb(0, 0, 0);
+	position: sticky;
+	top: 0;
+    z-index: 100;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    min-height: 70px;
+}
+
+nav img {
+    display: block;
+    max-height: 70px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+nav a:hover {
+    color:#F2C83B;
+    transition: 0.3s ease-out;
+}
+
+
+.hero-image {
+    margin: 0;
+    min-height: 75vh;
+    display: grid;
+    place-content: center;
+    text-align: center;
+    background-color: black;
+    
+}
+
+.container1 {
+    display: flex;
+    padding: 5%;
+    align-items: center;
+    gap: 5%;
+}
+
+.container1 li {
+    list-style: square;
+}
+
+.container1 img {
+    border-radius: 50%;
+}
+
+.container2 {
+    display: grid;
+    grid-template-columns: 47.5% 47.5%;
+    grid-auto-rows: minmax(400px, auto);
+    gap: 20px;
+    justify-content: center;
+    padding: 2%;
+
+}
+
+.card {
+    border: 2px solid black;
+    min-height: 30vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-align: right;    
+}
+
+.label {
+    color: white;
+    background-color: black;
+    padding: .5%;
+}
+
+
+.card1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-image: url(./images/horiseon.png);
+    background-position: top left;
+    background-size: cover;
+}
+
+.card2 {
+    background-image: url(./images/calc.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.card3 {
+    background-image: url(./images/toggle.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.card4 {
+    background-image: url(./images/hamburger.png);
+    background-size: cover;
+    background-position: center;
+
+}
+
+.card5 {
+    background-image: url(./images/lucky-shrub.JPG);
+    background-size:cover;
+    background-position: center;
+}
+
+
+.card:hover {
+    opacity: 0.8;
+    border: 2px #F2C83B solid;
+}
+
+#about {
+    margin: 25px 0;
+}
+
+.type {
+    overflow: hidden;
+    border-right: 2.5px solid #F2C83B;
+    color: white;
+    white-space: nowrap;
+    width: 75%;
+    margin: 0 auto;
+    animation:
+    typing 4s steps(35, end) forwards,
+    blink-caret 1s step-end infinite;
+}
+
+
+/* The typing effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+
+  }
+  
+  /* The typewriter cursor effect */
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #F2C83B }
+    }
+
+footer {
+    background-color: black;
+    color: white;
+}
+
+#contact ul {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    padding: 10px;;
+
+}
