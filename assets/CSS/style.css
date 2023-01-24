@@ -115,32 +115,32 @@ footer {
 .card1 {
     grid-column-start: 1;
     grid-column-end: 3;
-    background-image: url(/assets/images/horiseon.png);
+    background-image: url(../images/horiseon.png);
     background-position: top left;
     background-size: cover;
 }
 
 .card2 {
-    background-image: url(/assets/images/calc.png);
+    background-image: url(../images/calc.png);
     background-size: cover;
     background-position: center;
 }
 
 .card3 {
-    background-image: url(/assets/images/toggle.jpg);
+    background-image: url(../images/toggle.jpg);
     background-size: cover;
     background-position: center;
 }
 
 .card4 {
-    background-image: url(/assets/images/hamburger.png);
+    background-image: url(../images/hamburger.png);
     background-size: cover;
     background-position: center;
 
 }
 
 .card5 {
-    background-image: url(/assets/images/lucky-shrub.JPG);
+    background-image: url(../images/lucky-shrub.JPG);
     background-size:cover;
     background-position: center;
 }
