@@ -14,4 +14,5 @@ The remote site is hosted on GitHub Pages
 https://aturner1995.github.io/professional-porfolio/
 
 ## Screenshot
+![image](https://user-images.githubusercontent.com/120421650/214348922-2997bbcd-eddb-437f-9ec8-50c7995446cb.png)
 
