@@ -180,7 +180,7 @@ footer {
     white-space: nowrap;    
     margin: 0 auto;
     animation:
-    typing 3s steps(35, end) forwards,
+    typing 3s steps(36, end) forwards,
     blink-caret 1s step-end infinite;
 }
 
