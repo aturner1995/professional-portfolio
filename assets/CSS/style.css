@@ -116,7 +116,7 @@ footer {
 .card1 {
     grid-column-start: 1;
     grid-column-end: 3;
-    background-image: url(../images/horiseon.png);
+    background-image: url(../images/mapcation-screenshot.JPG);
     background-position: top left;
     background-size: cover;
 }
